@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.wizard" version="1.0.3" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B]" provider-name="13Clowns">
+	<requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en">[B][COLORred]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B] is a free portal for circus freaks to see the best stuff.</summary>
+		<description lang="en">[B][COLORred]13Clowns[/COLOR][/B], addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot>resources/screenshots/1.png</screenshot>
+		<screenshot>resources/screenshots/2.png</screenshot>
+		<screenshot>resources/screenshots/3.png</screenshot>
+	</assets>
+	<news></news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.13clowns" version="1.0.5a" name="[B][COLORred]13Clowns[/COLOR][/B]" provider-name="13Clowns">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.13clowns" />
+		<import addon="script.13clowns.artwork" />
+		<import addon="script.13clowns.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.lambdascrapers" version="1.6.0"/>
+		<import addon="script.module.metahandler" version="3.0.3" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[B][COLORred]13Clowns[/COLOR] [COLOR white]Video addon[/COLOR][/B] Here they come, They're back in town, It's the greatest show around, Cause the circus is coming to town, There are clowns- jugglers too, There's so much to see and do, Now the circus is coming to town, The lions roar- elephants will dance, Nothing could ever be so grand!, Don't be left behind, They're startin' right on time, Cause the circus is coming to town, Cause the circus is coming to town, Here they come, They're back in town, It's the greatest show around, Cause the circus is coming to town, There are clowns- jugglers too, There's so much to see and do, Now the circus is coming to town, The lions roar- the elephants will dance, Nothing could ever be so grand!, Don't be left behind, They're startin' right on time, Cause the circus is coming to town, Cause the circus is coming to town, The cir-cus is coming to town!!!</summary>
+		<description lang="en">[B][COLORred]13Clowns[/COLOR] [COLOR white]***Lambda Sources Edition***[/COLOR][/B]. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot>resources/screenshots/1.png</screenshot>
+		<screenshot>resources/screenshots/2.png</screenshot>
+		<screenshot>resources/screenshots/3.png</screenshot>
+	</assets>
+	<news></news>
+	</extension>
+</addon>
+
+    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.2" provider-name="13Clowns">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="13Clowns Repo">
+        <dir>
+            <info compressed="false">https://13clowns.com/repo/sources/_zips/addons.xml</info>
+            <checksum>https://13clowns.com/repo/sources/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://13clowns.com/repo/sources/_zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+        <dir>
+        <info compressed="false">https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/I-A-C/zips/master/</datadir>
+        </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">[B][COLORred]13Clowns[/COLOR][/B] - Repo is a free portal for you Clowns to see the best stuff!</summary>
+            <description lang="en">[B][COLORred]13Clowns[/COLOR][/B] - This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+            <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news></news>
+        </extension>
+    </addon>
+
+<addon id="script.13clowns.artwork" version="1.0.3" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Artwork[/COLOR][/B]" provider-name="13Clowns">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+	<summary lang="en">[COLORred]13Clowns - Artwork[/COLOR]</summary>
+	<description lang="en">[B][COLORred]13Clowns[/COLOR] ***Lambda Sources Edition***.[/B] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+	<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot></screenshot>
+		<screenshot></screenshot>
+		<screenshot></screenshot>
+    </assets>
+	<news></news>
+	</extension>
+</addon>
+
+<addon id="script.13clowns.metadata" version="1.0.1" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Metadata[/COLOR][/B]" provider-name="13Clowns">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[COLORred]13Clowns - Metadata[/COLOR]</summary>
+		<description lang="en">[B][COLORred]13Clowns[/COLOR] ***Lambda Sources Edition***.[/B] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot></screenshot>
+		<screenshot></screenshot>
+		<screenshot></screenshot>
+    </assets>
+	<news></news>
+	</extension>
+</addon>
+
+<addon id="script.module.13clowns" version="1.0.5b" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[COLORred]13Clowns - ScriptModule[/COLOR]</summary>
+		<description lang="en">[B][COLORred]13Clowns[/COLOR] ***Lambda Sources Edition***.[/B] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+	<platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot></screenshot>
+		<screenshot></screenshot>
+		<screenshot></screenshot>
+    </assets>
+	<news></news>
+	</extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="3.0.3"
+     provider-name="Eldorado, jsergio">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+</addons>
