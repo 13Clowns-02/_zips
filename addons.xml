@@ -25,7 +25,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="1.0.5a" name="[B][COLORred]13Clowns[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="1.0.6" name="[B][COLORred]13Clowns[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.13clowns" />
@@ -33,6 +33,8 @@
 		<import addon="script.13clowns.metadata" />
 		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
+		<import addon="script.module.youtube.dl" optional="true"/>
+    	<import addon="plugin.video.youtube" version="3.0.0"/>
 		<import addon="script.module.lambdascrapers" version="1.6.0"/>
 		<import addon="script.module.metahandler" version="3.0.3" />
 	</requires>
@@ -57,7 +59,7 @@
 	</extension>
 </addon>
 
-    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.3a" provider-name="13Clowns">
+    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.4" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -136,7 +138,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.13clowns" version="1.0.5b" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="1.0.6" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
@@ -181,6 +183,24 @@
     <website></website>
     <email></email>
     <source></source>
+  </extension>
+</addon>
+
+<addon id="script.speedtestnet"
+       name="ARNU Box Speed Tester"
+       version="1.0.0"
+       provider-name="ARNU Box / Josh.5">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ARNU Box Speed Tester</summary>
+    <description lang="en">ARNU Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.arnubox.com</description>
+    <platform>all</platform>
   </extension>
 </addon>
 </addons>
