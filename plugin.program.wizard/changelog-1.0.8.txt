@@ -1,0 +1,17 @@
+[B]1.0.8[/B]
+- added 13Clowns and Zanni
+[B]1.0.7[/B]
+- Meerge with Master
+[B]1.0.6[/B]
+- Removed Exodus Redux due to errors
+[B]1.0.5[/B]
+- Removed Exodus Redux due to errors
+- fixed git link
+[B]1.0.4[/B]
+- Added Exodus Redux
+[B]1.0.3[/B]
+- Fix borken links
+[B]1.0.2[/B]
+- Fix borken links
+[B]1.0.1[/B]
+- Initial version
