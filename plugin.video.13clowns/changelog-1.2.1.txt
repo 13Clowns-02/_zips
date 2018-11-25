@@ -1,0 +1,38 @@
+[B]1.2.1[/B]
+- show unaired season/episode option for S00
+[B]1.2[/B]
+- default autoplay on source
+- default to 1080
+- default 13clowns theme
+- kodi 18 fixes
+====================================================
+[B]1.0.10[/B]
+- ensure Lambda is default grey out field
+[B]1.0.9[/B]
+- fix screw ups
+[B]1.0.8[/B]
+- ensure Lambda is default
+[B]1.0.7[/B]
+- clean up from git merge
+[B]1.0.6[/B]
+- clean up from git merge
+[B]1.0.5a[/B]
+- added documentary
+[B]1.0.5[/B]
+- icon change
+- fix in theaters
+- fix link to providers
+- change information & News to "No Stream HELP!"
+- Credits sections
+- trailers off by default
+[B]1.0.4[/B]
+- scraper fault 30
+- premium source indicator (red)
+- URL Resolver menu relocation
+- Information & News changes
+[B]1.0.3[/B]
+- Minor Changes
+[B]1.0.2[/B]
+- Minor Changes
+[B]1.0.1[/B]
+- Initial version
