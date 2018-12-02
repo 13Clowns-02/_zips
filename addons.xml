@@ -174,7 +174,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.13clowns" version="1.0.9" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="1.0.9a" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
