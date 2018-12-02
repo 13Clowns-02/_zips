@@ -60,7 +60,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.zanni" version="1.0.4" name="[B][COLOR orange]Zanni[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.video.zanni" version="1.0.5" name="[B][COLOR orange]Zanni[/COLOR][/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
