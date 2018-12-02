@@ -25,25 +25,26 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="1.2.1" name="[B][COLORred]13Clowns[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="1.2.2" name="[B][COLORred]13Clowns[/COLOR][/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.13clowns" />
-        <import addon="script.13clowns.artwork" />
-        <import addon="script.13clowns.metadata" />
-        <import addon="script.module.resolveurl" />
-        <import addon="script.module.requests" />
+        <import addon="script.module.13clowns" version="1.0.8" />
+        <import addon="script.13clowns.artwork" version="1.0.6" />
+        <import addon="script.13clowns.metadata" version="1.0.2" />
+        <import addon="script.module.resolveurl" version="5.0.18" />
+        <import addon="script.module.requests" version="2.19.1" />
         <import addon="script.module.youtube.dl" optional="true"/>
-        <import addon="plugin.video.youtube" version="3.0.0"/>
+        <import addon="plugin.video.youtube" version="6.2.2"/>
         <import addon="script.module.lambdascrapers" version="1.6.0"/>
         <import addon="script.module.metahandler" version="3.0.3" />
+        <import addon="script.module.addon.signals" version="0.0.1" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[B][COLORred]13Clowns[/COLOR] [COLOR white]Video addon,[/COLOR] [COLOR orange]with Lambda Sources[/COLOR][/B]. Here they come, They're back in town, It's the greatest show around, Cause the circus is coming to town, There are clowns- jugglers too, There's so much to see and do, Now the circus is coming to town, The lions roar- elephants will dance, Nothing could ever be so grand!, Don't be left behind, They're startin' right on time, Cause the circus is coming to town, Cause the circus is coming to town, Here they come, They're back in town, It's the greatest show around, Cause the circus is coming to town, There are clowns- jugglers too, There's so much to see and do, Now the circus is coming to town, The lions roar- the elephants will dance, Nothing could ever be so grand!, Don't be left behind, They're startin' right on time, Cause the circus is coming to town, Cause the circus is coming to town, The cir-cus is coming to town!!!</summary>
+        <summary lang="en">[B][COLORred]13Clowns[/COLOR] [COLOR white]Video addon[/COLOR] [COLOR orange]with Lambda Sources[/COLOR][/B]. Here they come, They're back in town, It's the greatest show around, Cause the circus is coming to town, There are clowns- jugglers too, There's so much to see and do, Now the circus is coming to town, The lions roar- elephants will dance, Nothing could ever be so grand!, Don't be left behind, They're startin' right on time, Cause the circus is coming to town, Cause the circus is coming to town, Here they come, They're back in town, It's the greatest show around, Cause the circus is coming to town, There are clowns- jugglers too, There's so much to see and do, Now the circus is coming to town, The lions roar- the elephants will dance, Nothing could ever be so grand!, Don't be left behind, They're startin' right on time, Cause the circus is coming to town, Cause the circus is coming to town, The cir-cus is coming to town!!!</summary>
         <description lang="en">[B][COLORred]13Clowns[/COLOR] [COLOR white]Video addon,[/COLOR] [COLOR orange]with Lambda Sources[/COLOR][/B]. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
     <platform>all</platform>
@@ -59,7 +60,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.zanni" version="1.0.3" name="[B][COLOR orange]Zanni[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.video.zanni" version="1.0.4" name="[B][COLOR orange]Zanni[/COLOR][/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
@@ -69,6 +70,7 @@
         <import addon="script.module.requests" />
         <import addon="script.module.youtube.dl" optional="true"/>
         <import addon="plugin.video.youtube" version="3.0.0"/>
+        <import addon="script.module.addon.signals" version="0.0.1"/>
         <import addon="script.module.lambdascrapers" version="1.6.0"/>
         <import addon="script.module.metahandler" version="3.0.3" />
     </requires>
@@ -172,7 +174,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.13clowns" version="1.0.8" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="1.0.9" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>

@@ -1,9 +1,0 @@
-[B]1.0.3[/B]
-- show unaired season/episode option for S00
-[B]1.0.2[/B]
-- default autoplay on source
-- default to 1080
-- default Zanni theme
-- Kodi 18 fixes
-[B]1.0.1[/B]
-- Initial version
