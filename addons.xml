@@ -130,6 +130,23 @@
         </extension>
     </addon>
 
+    <addon id="repository.turtlestv" name="TurtlesTV" version="4.0" provider-name="TurtlesTV">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="TurtlesTV">
+            <info compressed="false">http://turtlestv.net/_zips/addons.xml</info>
+            <checksum>http://turtlestv.net/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">http://turtlestv.net/_zips/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Repository for TurtlesTV</summary>
+            <description>TurtlesTV is a educational add-on. We do not host any of the contents streamed.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="script.13clowns.artwork" version="1.0.6" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Artwork[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -174,7 +191,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.13clowns" version="1.0.9a" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="1.0.9f" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
@@ -194,48 +211,5 @@
     </assets>
 	<news></news>
 	</extension>
-</addon>
-
-<addon id="script.module.metahandler"
-     name="metahandler"
-     version="3.0.3"
-     provider-name="Eldorado, jsergio">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="script.module.myconnpy" version="1.1.6"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.speedtestnet"
-       name="ARNU Box Speed Tester"
-       version="1.0.0"
-       provider-name="ARNU Box / Josh.5">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script"
-             library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">ARNU Box Speed Tester</summary>
-    <description lang="en">ARNU Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.arnubox.com</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 </addons>
