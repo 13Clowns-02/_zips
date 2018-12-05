@@ -25,7 +25,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="1.2.3" name="[B][COLORred]13Clowns[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="1.2.4" name="[B][COLORred]13Clowns[/COLOR][/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" version="1.0.9" />
@@ -59,7 +59,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.zanni" version="1.0.5" name="[B][COLOR orange]Zanni[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.video.zanni" version="1.0.6" name="[B][COLOR orange]Zanni[/COLOR][/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
@@ -94,7 +94,7 @@
     </extension>
 </addon>
 
-    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.7" provider-name="13Clowns">
+    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.8" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -129,7 +129,7 @@
         </extension>
     </addon>
 
-<addon id="script.13clowns.artwork" version="1.0.6" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Artwork[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.13clowns.artwork" version="1.0.6a" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Artwork[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -151,7 +151,7 @@
 	</extension>
 </addon>
 
-<addon id="script.13clowns.metadata" version="1.0.2" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Metadata[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.13clowns.metadata" version="1.0.3" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Metadata[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -173,7 +173,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.13clowns" version="1.0.10" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="1.0.10a" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
