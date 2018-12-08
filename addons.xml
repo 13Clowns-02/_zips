@@ -104,11 +104,6 @@
             <datadir zip="true">https://raw.githubusercontent.com/13Clowns/_zips/master/</datadir>
         </dir>
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/13Clowns/_beta/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/13Clowns/_beta/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/13Clowns/_beta/master/</datadir>
-        </dir>
-        <dir>
             <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
