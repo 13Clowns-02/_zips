@@ -93,7 +93,7 @@
     </extension>
 </addon>
 
-    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.9" provider-name="13Clowns">
+    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.11" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -102,6 +102,11 @@
             <info compressed="false">https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/13Clowns/_zips/master/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/13Clowns/_beta/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/13Clowns/_beta/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/13Clowns/_beta/master/</datadir>
         </dir>
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
