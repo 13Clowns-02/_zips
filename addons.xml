@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.wizard" version="2.0" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.program.wizard" version="2.0.1" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
