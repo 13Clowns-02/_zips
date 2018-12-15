@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.wizard" version="2.0.3" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B]" provider-name="13Clowns">
+<addon id="plugin.program.wizard" version="2.0.3" name="[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -9,8 +9,8 @@
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-		<summary lang="en">[B][COLORred]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B] is a free portal for circus freaks to see the best stuff.</summary>
-		<description lang="en">[B][COLORred]13Clowns[/COLOR][/B], addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<summary lang="en">[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Wizard[/COLOR][/B] is a free portal for circus freaks to see the best stuff.</summary>
+		<description lang="en">[B][COLOR ff680001]13Clowns[/COLOR][/B], addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
 	<platform>all</platform>
 	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
@@ -91,7 +91,7 @@
     </extension>
 </addon>
 
-    <addon id="repository.13clowns" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.12" provider-name="13Clowns">
+    <addon id="repository.13clowns" name="[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Repo[/COLOR][/B]" version="1.0.12" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -126,7 +126,7 @@
         </extension>
     </addon>
 
-    <addon id="repository.13clownsBETA" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Repo-BETA[/COLOR][/B]" version="1.0.1" provider-name="13Clowns">
+    <addon id="repository.13clownsBETA" name="[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Repo-BETA[/COLOR][/B]" version="1.0.1" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -161,13 +161,30 @@
         </extension>
     </addon>
 
-<addon id="script.13clowns.artwork" version="1.0.7" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Artwork[/COLOR][/B]" provider-name="13Clowns">
+    <addon id="repository.13Cscrapers" name="[COLOR ff680001]13C[/COLOR] scrapers" version="0.0.1" provider-name="13Clowns">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="13Clowns">
+            <info compressed="false">https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/13Clowns/_scrapers/master/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>13Clowns Scrapers fork from Lambda (I-A-C). Scraper Module for Exodus based add ons.</summary>
+            <description>This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.13clowns.artwork" version="1.0.7" name="[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Artwork[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
-	<summary lang="en">[COLORred]13Clowns - Artwork[/COLOR]</summary>
+	<summary lang="en">[COLOR ff680001]13Clowns - Artwork[/COLOR]</summary>
 	<description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 	<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
 	<platform>all</platform>
@@ -183,13 +200,13 @@
 	</extension>
 </addon>
 
-<addon id="script.13clowns.metadata" version="1.0.3" name="[B][COLORred]13Clowns[/COLOR] [COLOR white]Metadata[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.13clowns.metadata" version="1.0.3" name="[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Metadata[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[COLORred]13Clowns - Metadata[/COLOR]</summary>
+		<summary lang="en">[COLOR ff680001]13Clowns - Metadata[/COLOR]</summary>
 		<description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
 	<platform>all</platform>
