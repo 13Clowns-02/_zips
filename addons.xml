@@ -156,7 +156,7 @@
         </extension>
     </addon>
 
-    <addon id="repository.13Cscrapers" name="[COLOR ff680001]13C[/COLOR] scrapers" version="0.0.1" provider-name="13Clowns">
+    <addon id="repository.13Cscrapers" name="B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Scrapers[/COLOR][/B]" version="0.0.2" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -217,7 +217,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.13clowns" version="1.0.12" name="[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="1.0.13" name="[B][COLOR ff680001]13Clowns[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
