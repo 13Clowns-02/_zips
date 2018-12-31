@@ -25,16 +25,16 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="1.2.9" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="1.2.9a" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
    <requires>
         <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.13clowns" version="1.0.14" />
-        <import addon="script.13clowns.artwork" version="1.0.8" />
-        <import addon="script.13clowns.metadata" version="1.0.4" />
-        <import addon="script.module.resolveurl" version="5.0.21" />
-        <import addon="script.module.requests" version="2.19" />
-        <import addon="script.module.metahandler" version="3.0.3" />
-        <import addon="script.module.lambdascrapers" version="0.0.0" />
+        <import addon="script.module.13clowns" />
+        <import addon="script.13clowns.artwork" />
+        <import addon="script.13clowns.metadata" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.metahandler" />
+        <import addon="script.module.lambdascrapers" />
         <import addon="script.module.globalscrapers" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
