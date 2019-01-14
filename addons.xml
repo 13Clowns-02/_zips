@@ -25,7 +25,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="1.2.9a" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="1.3.0" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
    <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
@@ -34,8 +34,8 @@
         <import addon="script.module.resolveurl" />
         <import addon="script.module.requests" />
         <import addon="script.module.metahandler" />
-        <import addon="script.module.lambdascrapers" />
         <import addon="script.module.globalscrapers" />
+        <import addon="script.module.civitasscrapers" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -48,7 +48,7 @@
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <assets>
-        <icon>icon.png</icon>
+        <icon>icon.gif</icon>
         <fanart>fanart.jpg</fanart>
         <screenshot>resources/screenshots/1.png</screenshot>
         <screenshot>resources/screenshots/2.png</screenshot>
@@ -58,41 +58,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.zanni" version="2.0.1" name="[B][COLOR orange]Zanni[/COLOR][/B]" provider-name="13Clowns">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.zanni" version="1.0.9" />
-        <import addon="script.zanni.artwork" version="1.0.5" />
-        <import addon="script.zanni.metadata" version="1.0.1" />
-        <import addon="script.module.resolveurl" version="5.0.17" />
-        <import addon="script.module.requests" version="2.19" />
-        <import addon="script.module.youtube.dl" optional="true"/>
-        <import addon="plugin.video.youtube" version="6.2.1"/>
-        <import addon="script.module.lambdascrapers" version="1.7.0"/>
-        <import addon="script.module.metahandler" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[B][COLOR orange]Zanni Video addon with Lambda Sources[/COLOR][/B] - The name Zanni is a variant of the name Gianni and was common in the Lombard-Venetian countryside which provided most of the servants to the wealthy nobles and merchants of Venice. [B]In Italian it is specifically a name of someone whose identity is not of any importance.[/B]</summary>
-        <description lang="en">[B][COLOR orange]Zanni Video addon with Lambda Sources[/COLOR][/B]. This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshots/1.png</screenshot>
-        <screenshot>resources/screenshots/2.png</screenshot>
-        <screenshot>resources/screenshots/3.png</screenshot>
-    </assets>
-    <news></news>
-    </extension>
-</addon>
-
-    <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="1.0.15a" provider-name="13Clowns">
+    <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="1.0.16" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -132,7 +98,7 @@
         </extension>
     </addon>
 
-    <addon id="repository.13clowns-BETA" name="[B][COLOR red]13Clowns[/COLOR] Repo-BETA[/B]" version="0.0.3" provider-name="13Clowns">
+    <addon id="repository.13clowns-beta" name="[B][COLOR red]13Clowns[/COLOR] Repo-beta[/B]" version="0.0.4c" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -214,7 +180,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.13clowns" version="1.0.15.2" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="1.0.16" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
@@ -239,7 +205,7 @@
 
 <addon id="script.module.metahandler"
      name="metahandler"
-     version="3.0.6"
+     version="3.0.3"
      provider-name="Eldorado, jsergio">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -262,28 +228,6 @@
   </extension>
 </addon>
 
-<addon id="script.module.zanni" version="2.0" name="[B][COLOR orange]Zanni[/COLOR] [COLOR white]Script.Module[/COLOR][/B]" provider-name="13Clowns">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-	<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-	<platform>all</platform>
-	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-		<screenshot></screenshot>
-		<screenshot></screenshot>
-		<screenshot></screenshot>
-    </assets>
-	<news></news>
-	</extension>
-</addon>
-
 <addon id="script.speedtestnet"
        name="ARNU Box Speed Tester"
        version="1.0.0"
@@ -300,49 +244,5 @@
     <description lang="en">ARNU Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.arnubox.com</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="script.zanni.artwork" version="2.0" name="[B][COLOR orange]Zanni[/COLOR] [COLOR white]Artwork[/COLOR][/B]" provider-name="13Clowns">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-	<summary lang="en">[COLORred]13Clowns - Artwork[/COLOR]</summary>
-	<description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-	<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-	<platform>all</platform>
-	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-		<screenshot></screenshot>
-		<screenshot></screenshot>
-		<screenshot></screenshot>
-    </assets>
-	<news></news>
-	</extension>
-</addon>
-
-<addon id="script.zanni.metadata" version="2.0" name="[B][COLOR orange]Zanni[/COLOR] [COLOR white]Metadata[/COLOR][/B]" provider-name="13Clowns">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[COLORred]13Clowns - Metadata[/COLOR]</summary>
-		<description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-	<platform>all</platform>
-	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-		<screenshot></screenshot>
-		<screenshot></screenshot>
-		<screenshot></screenshot>
-    </assets>
-	<news></news>
-	</extension>
 </addon>
 </addons>
