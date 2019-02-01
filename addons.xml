@@ -25,7 +25,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="2.0" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="2.0.1" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
    <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
