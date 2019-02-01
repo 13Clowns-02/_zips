@@ -25,7 +25,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="2.0.2" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="2.0.3" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
    <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
@@ -57,7 +57,7 @@
     </extension>
 </addon>
 
-    <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="2.0.1" provider-name="13Clowns">
+    <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="2.0.3" provider-name="13Clowns">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -73,14 +73,9 @@
             <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
         </dir>
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/civitasadmin/Civitas/master/_scrapers/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/civitasadmin/Civitas/master/_scrapers/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/civitasadmin/Civitas/master/_scrapers/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://13clowns.com/backup/_zips/addons.xml</info>
-            <checksum>https://13clowns.com/backup/_zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://13clowns.com/backup/_zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/civitasadmin/_scrapers/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/civitasadmin/_scrapers/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/civitasadmin/_scrapers/master/</datadir>
         </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
@@ -97,7 +92,7 @@
         </extension>
     </addon>
 
-<addon id="script.13clowns.artwork" version="2.0" name="[B][COLOR red]13Clowns[/COLOR] Artwork[/B]" provider-name="13Clowns">
+<addon id="script.13clowns.artwork" version="2.0.1" name="[B][COLOR red]13Clowns[/COLOR] Artwork[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
@@ -119,7 +114,7 @@
     </extension>
 </addon>
 
-<addon id="script.13clowns.metadata" version="2.0" name="[B][COLOR red]13Clowns[/COLOR] Metadata[/B]" provider-name="13Clowns">
+<addon id="script.13clowns.metadata" version="2.0.1" name="[B][COLOR red]13Clowns[/COLOR] Metadata[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
@@ -141,7 +136,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.13clowns" version="2.0.2" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="2.0.3" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
