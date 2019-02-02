@@ -25,7 +25,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="2.0.3.1" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="2.0.3.2" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
    <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
@@ -42,6 +42,72 @@
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[B][COLOR red]13Clowns[/COLOR] Video[/B] is a free portal for circus freaks to see the best stuff.</summary>
+        <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.gif</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshots/1.png</screenshot>
+        <screenshot>resources/screenshots/2.png</screenshot>
+        <screenshot>resources/screenshots/3.png</screenshot>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.bodie" version="999.999.991" name="Bodie" provider-name="Grice Advice">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.bodie" />
+		<import addon="script.bodie.artwork" />
+		<import addon="script.bodie.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.globalscrapers"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="bodie.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Bodie</summary>
+		<description lang="en">Bodie</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+		</news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.bodiekodi" version="999.999.99" name="[COLORblue]•[/COLOR][COLORred]•[/COLOR][COLORyellow]•[/COLOR][COLORlime]•[/COLOR][B][COLOR ghostwhite]Bodie[/COLOR][/B][COLORblue]•[/COLOR][COLORred]•[/COLOR][COLORyellow]•[/COLOR][COLORlime]•[/COLOR]" provider-name="Grice Advice">
+   <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.bodiekodi" />
+        <import addon="script.bodiekodi.artwork" />
+        <import addon="script.bodiekodi.metadata" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.metahandler" />
+        <import addon="script.module.globalscrapers" />
+        <import addon="script.module.civitasscrapers" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLORblue]•[/COLOR][COLORred]•[/COLOR][COLORyellow]•[/COLOR][COLORlime]•[/COLOR][B][COLOR ghostwhite]Remember : It's not Kodi without Bodie![/COLOR][/B][COLORblue]•[/COLOR][COLORred]•[/COLOR][COLORyellow]•[/COLOR][COLORlime]•[/COLOR] </summary>
         <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
     <platform>all</platform>
@@ -136,6 +202,40 @@
     </extension>
 </addon>
 
+<addon id="script.bodie.artwork" version="999.999.99" name="Bodie Artwork" provider-name="Grice Advice">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Bodie Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.bodiekodi.artwork" version="999.999.99" name="[B][COLOR ghostwhite]Bodie[/COLOR] Artwork[/B]" provider-name="Grice Advice">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR ghostwhite]Bodie[/COLOR] Artwork[/B]</summary>
+    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
 <addon id="script.module.13clowns" version="2.0.4" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
@@ -144,6 +244,46 @@
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
     <summary lang="en">[B][COLOR red]13Clowns[/COLOR] Script.Module[/B] is a free portal for circus freaks to see the best stuff.</summary>
+    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+<addon id="script.module.bodie" name="Bodie Module" version="999.999.991" provider-name="Grice Advice">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.simplejson"/>
+		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.xmltodict" version="0.9.0" />
+		<import addon="plugin.video.SportsDevil"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Bodie Plugin For Movies TV Shows Playlists</summary>
+	</extension>
+</addon>
+
+<addon id="script.module.bodiekodi" version="999.999.991" name="[B][COLOR ghostwhite]Bodie[/COLOR] Script.Module[/B]" provider-name="Grice Advice">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">[B][COLOR ghostwhite]Bodie[/COLOR] Script.Module[/B]</summary>
     <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
     <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
         <platform>all</platform>
