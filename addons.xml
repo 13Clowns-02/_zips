@@ -25,7 +25,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="2.0.3.3.1" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="2.0.4" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
    <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
@@ -57,40 +57,40 @@
     </extension>
 </addon>
 
-    <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="2.0.4" provider-name="13Clowns">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="13Clowns Repo">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/13Clowns/_zips/master/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/civitasadmin/_scrapers/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/civitasadmin/_scrapers/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/civitasadmin/_scrapers/master/</datadir>
-        </dir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary lang="en">[B][COLOR red]13Clowns[/COLOR][/B] - Repo is a free portal for you Clowns to see the best stuff!</summary>
-            <description lang="en">[B][COLOR red]13Clowns[/COLOR][/B] - This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-            <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-            <platform>all</platform>
-            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news></news>
-        </extension>
-    </addon>
+<addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="2.0.4" provider-name="13Clowns">
+	<requires>
+    	<import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="13Clowns Repo">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/13Clowns/_zips/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/civitasadmin/_scrapers/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/civitasadmin/_scrapers/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/civitasadmin/_scrapers/master/</datadir>
+    </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[B][COLOR red]13Clowns[/COLOR][/B] - Repo is a free portal for you Clowns to see the best stuff!</summary>
+        <description lang="en">[B][COLOR red]13Clowns[/COLOR][/B] - This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
 
 <addon id="script.13clowns.artwork" version="2.0.1" name="[B][COLOR red]13Clowns[/COLOR] Artwork[/B]" provider-name="13Clowns">
     <requires>
@@ -170,7 +170,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.13clowns" version="2.0.5.6" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="2.0.6" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
