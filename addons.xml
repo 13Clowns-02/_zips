@@ -57,6 +57,25 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.diamond.eim.metalliq" name="[B][COLOR white]I Installed[/COLOR] [COLOR lime]EIM and MetalliQ 2[/COLOR][/B]" version="999.999.996" provider-name="Community">
+	<requires>
+		<import addon="script.module.movietheaterbutter" />
+		<import addon="script.movietheaterbutter.artwork" />
+        <import addon="xbmc.python" version="2.19.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource">
+	<provides>video</provides>
+	</extension>
+		<extension point="xbmc.addon.metadata">
+		<summary lang="en">[COLOR lime]Installer to teach Diamomd not to overwrite addons in other repositories without permission[/COLOR]</summary>
+		<description lang="en">Not a Video Add-On, it just fixes Diamomd's mistake for overwriting MetalliQ 4Qed with higher version. Do not support people such as Diamond Builds. You may remove this now, thank you.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+		<forum>n/a</forum>
+		<website>n/a</website>
+	</extension>
+</addon>
+
 <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="2.0.4" provider-name="13Clowns">
 	<requires>
     	<import addon="xbmc.addon" version="12.0.0"/>
@@ -256,6 +275,34 @@
     <email></email>
     <source></source>
   </extension>
+</addon>
+
+<addon id="script.module.movietheaterbutter" name="Movie Theater Butter Module" version="999.999.999" provider-name="MTB">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Source Module for the Movie Theater Butter Addon</summary>
+	</extension>
+</addon>
+
+<addon id="script.movietheaterbutter.artwork" version="999.999.999" name="Movie Theater Butter Artwork" provider-name="Team Diamond">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the MTB Addon</summary>
+		<description>Artwork Module for the MTB Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.speedtestnet"
