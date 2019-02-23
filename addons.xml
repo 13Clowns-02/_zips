@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.wizard" version="2.0.7" name="[B][COLOR red]13Clowns[/COLOR] Wizard[/B]" provider-name="13Clowns">
+<addon id="plugin.program.wizard" version="2.0.8" name="[B][COLOR red]13Clowns[/COLOR] Wizard[/B]" provider-name="13Clowns">
     <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -25,7 +25,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.13clowns" version="2.0.6.1" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
+<addon id="plugin.video.13clowns" version="2.0.6.2" name="[B][COLOR red]13Clowns[/COLOR] Video[/B]" provider-name="13Clowns">
    <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.13clowns" />
@@ -55,6 +55,112 @@
     </assets>
     <news></news>
     </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="2018.09.20"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="plugin.video.f4mTester" />
+   <import addon="script.module.slproxy" />
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <!-- <extension point="xbmc.service" library="service/streamlink_proxy.py" /> -->
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsDevil</summary>
+    <description lang="en">[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
+    <disclaimer lang="en">There can only be one.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.uwc"
+       name="Ultimate Whitecream"
+       version="1.1.65"
+       provider-name="Whitecream, holisticdioxide">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.resolveurl" version="5.0.00"/>
+        <import addon="script.module.resolveurl.xxx" version="2.0.01"/>
+        <import addon="script.video.F4mProxy" version="2.5.7" />
+		<import addon="script.module.requests" />
+
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
+        <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider. DMCA - holisticdioxide@protonmail.com</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+        <news>[B]Version 1.1.65 (mb)[/B]
+Fixed: All TUBES
+Fixed: All Hentais
+Fixed: Some Webcams
+Fixed: All Movies</news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.vader" name="[COLOR red]Vader Streams[/COLOR]" version="4.9.000" provider-name="DarthVader">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common"/>
+    <import addon="script.module.pyxbmct"  />
+    <import addon="script.module.requests"/>
+    <import addon="script.module.dateutil"/>
+
+  </requires>
+
+  <extension point="xbmc.python.pluginsource"
+            library="init.py">
+        <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="login"></extension>
+  <!--<extension point="xbmc.service" library="playMonitor.py" start="login"></extension>-->
+
+
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>false</reuselanguageinvoker>
+
+    <summary lang="en">[COLOR red]Vader-Streams[/COLOR]</summary>
+	<description lang="en">Get all your Live Sports n Live TV here</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="2.0.4" provider-name="13Clowns">
@@ -170,7 +276,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.13clowns" version="2.0.8.7" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="2.0.8.8" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
@@ -270,6 +376,28 @@
 	</extension>
 </addon>
 
+<addon id="script.module.slproxy" name="SLProxy" version="0.0.5" provider-name="devilsport">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests"/>
+	  <import addon="script.module.streamlink.base" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib/"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>StreamLink Proxy DS</summary>
+    <description>Streamlink proxy for Kodi</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source></source>
+    <language>en</language>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>
+    </news>
+  </extension>
+</addon>
+
 <addon id="script.movietheaterbutter.artwork" version="999.999.999" name="Movie Theater Butter Artwork" provider-name="Team Diamond">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -302,5 +430,21 @@ This is a Non-profit resource, organized solely for educational purposes which i
     <description lang="en">ARNU Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.arnubox.com</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+    </extension>
 </addon>
 </addons>
