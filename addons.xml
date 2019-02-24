@@ -291,15 +291,14 @@ Fixed: All Movies</news>
     </extension>
 </addon>
 
-<addon id="script.module.13clowns" version="2.0.8.9" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="2.0.8.10" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
         <import addon="script.module.simplejson"/>
-		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
-		<import addon="script.module.requests" version="2.9.1" />
-		<import addon="script.module.xmltodict" version="0.9.0" />
-		<import addon="plugin.video.SportsDevil"/>
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
