@@ -57,21 +57,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon
   id="plugin.video.SportsDevil"
   version="2018.09.20"
@@ -304,44 +289,32 @@ Fixed: All Movies</news>
     </extension>
 </addon>
 
-<addon id="script.module.bodie" name="Bodie Module" version="999.999.991" provider-name="Grice Advice">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-		<import addon="script.module.simplejson"/>
-		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
-		<import addon="script.module.requests" version="2.9.1" />
-		<import addon="script.module.xmltodict" version="0.9.0" />
-		<import addon="plugin.video.SportsDevil"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Bodie Plugin For Movies TV Shows Playlists</summary>
-	</extension>
-</addon>
-
-<addon id="script.module.bodiekodi" version="999.999.994" name="[B][COLOR ghostwhite]Bodie[/COLOR] Script.Module[/B]" provider-name="Grice Advice">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.beautifulsoup4"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-    <summary lang="en">[B][COLOR ghostwhite]Bodie[/COLOR] Script.Module[/B]</summary>
-    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart></fanart>
-        <screenshot></screenshot>
-        <screenshot></screenshot>
-        <screenshot></screenshot>
-    </assets>
-    <news></news>
-    </extension>
+<addon id="script.module.livestreamer"
+       name="livestreamer"
+       version="1.12.0"
+       provider-name="Christopher Rosell">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"
+                      version="1.1.0"
+                     optional="false"/>
+    <import addon="script.module.singledispatch"
+                      version="3.4.0.3"
+                     optional="false"/>
+    <import addon="script.module.futures"
+                      version="2.2.0"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Livestreamer extracts streams from various services</summary>
+    <description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/chrippa/livestreamer.git</source>
+    <website>http://livestreamer.io</website>
+  </extension>
 </addon>
 
 <addon id="script.module.metahandler"
@@ -369,94 +342,47 @@ Fixed: All Movies</news>
   </extension>
 </addon>
 
-<addon id="script.module.movietheaterbutter" name="Movie Theater Butter Module" version="999.999.999" provider-name="MTB">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Source Module for the Movie Theater Butter Addon</summary>
-	</extension>
-</addon>
-
-<addon id="script.module.slproxy" name="SLProxy" version="0.0.5" provider-name="devilsport">
+<addon id="script.module.python.koding.aio"
+   name="Python Koding AIO"
+   version="1.0"
+   provider-name="Total Revolution">
   <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.requests"/>
-	  <import addon="script.module.streamlink.base" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib/"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>StreamLink Proxy DS</summary>
-    <description>Streamlink proxy for Kodi</description>
-    <platform>all</platform>
-    <license>Simplified BSD</license>
-    <source></source>
-    <language>en</language>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-    <news>
-    </news>
-  </extension>
-</addon>
-
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2018.12.05" provider-name="Streamlink Devs, Twilight0">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-    <import addon="script.module.futures" version="2.2.0"/>
-    <import addon="script.module.streamlink.crypto" version="1.4.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="resources/lib/"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>Streamlink Library</summary>
-    <description>Streamlink Library for Kodi</description>
-    <platform>all</platform>
-    <license>Simplified BSD</license>
-    <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
-    <language>en</language>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-    <news>+ 2018.12.05
-- Corrected icon asset location, ensuring backwards compatibility
-
-+ 2018.12.04
-- Rebase to latest upstream commit b99249e941852341b06b267ffc1ca1d144c6b718
-- New icon</news>
-  </extension>
-</addon>
-
-<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.5.0" provider-name="Streamlink.crypto">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver" version="1.2.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+    <import addon="script.module.beautifulsoup" version="2.1.31"/>
+    <import addon="script.module.unidecode" version="0.4.16"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary>Pure Python implementation of the cryptographic libraries required by Streamlink</summary>
-    <source>https://github.com/Twilight0/script.module.streamlink.crypto</source>
     <platform>all</platform>
-    <license>MIT</license>
+    <summary lang="en">Python Koding All In One</summary>
+    <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>Creative Commons 4.0-NC-ND</license>
+    <forum>http://totalrevolution.tv/forum</forum>
+    <website>http://totalrevolution.tv</website>
+    <news>1.0 Stable release</news>
+    <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
   </extension>
 </addon>
 
-<addon id="script.movietheaterbutter.artwork" version="999.999.999" name="Movie Theater Butter Artwork" provider-name="Team Diamond">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the MTB Addon</summary>
-		<description>Artwork Module for the MTB Addon</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
-The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
-This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Beerware rev. 42</license>
-		<platform>all</platform>
-	</extension>
+<addon id="script.module.xmltodict" name="xmltodict" version="0.11.0" provider-name="martinblech">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <language></language>
+        <summary lang="en">Python helper module</summary>
+        <description lang="en">xmltodict is a Python module that makes working with XML feel like you are working with JSON, as in this "spec".</description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <website>https://github.com/martinblech/xmltodict</website>
+        <source>https://github.com/martinblech/xmltodict</source>
+        <forum></forum>
+    </extension>
 </addon>
 
 <addon id="script.speedtestnet"
@@ -475,21 +401,5 @@ This is a Non-profit resource, organized solely for educational purposes which i
     <description lang="en">ARNU Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.arnubox.com</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.requests" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Proxy for f4m</summary>
-        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-    </extension>
 </addon>
 </addons>
