@@ -430,6 +430,19 @@ Fixed: All Movies</news>
   </extension>
 </addon>
 
+<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.5.0" provider-name="Streamlink.crypto">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python implementation of the cryptographic libraries required by Streamlink</summary>
+    <source>https://github.com/Twilight0/script.module.streamlink.crypto</source>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
+</addon>
+
 <addon id="script.movietheaterbutter.artwork" version="999.999.999" name="Movie Theater Butter Artwork" provider-name="Team Diamond">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
