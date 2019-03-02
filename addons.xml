@@ -257,41 +257,7 @@ Fixed: All Movies</news>
     </extension>
 </addon>
 
-<addon id="script.bodie.artwork" version="999.999.99" name="Bodie Artwork" provider-name="Grice Advice">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Bodie Addon</summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.bodiekodi.artwork" version="999.999.994" name="[B][COLOR ghostwhite]Bodie[/COLOR] Artwork[/B]" provider-name="Grice Advice">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-    <summary lang="en">[B][COLOR ghostwhite]Bodie[/COLOR] Artwork[/B]</summary>
-    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart></fanart>
-        <screenshot></screenshot>
-        <screenshot></screenshot>
-        <screenshot></screenshot>
-    </assets>
-    <news></news>
-    </extension>
-</addon>
-
-<addon id="script.module.13clowns" version="2.0.8.12a" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
+<addon id="script.module.13clowns" version="2.0.8.12b" name="[B][COLOR red]13Clowns[/COLOR] Script.Module[/B]" provider-name="13Clowns">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
@@ -369,18 +335,6 @@ Fixed: All Movies</news>
     <email></email>
     <source></source>
   </extension>
-</addon>
-
-<addon id="script.module.movietheaterbutter" name="Movie Theater Butter Module" version="999.999.999" provider-name="MTB">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Source Module for the Movie Theater Butter Addon</summary>
-	</extension>
 </addon>
 
 <addon id="script.module.python.koding.aio"
@@ -486,22 +440,6 @@ Fixed: All Movies</news>
         <source>https://github.com/martinblech/xmltodict</source>
         <forum></forum>
     </extension>
-</addon>
-
-<addon id="script.movietheaterbutter.artwork" version="999.999.999" name="Movie Theater Butter Artwork" provider-name="Team Diamond">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the MTB Addon</summary>
-		<description>Artwork Module for the MTB Addon</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
-The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
-This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Beerware rev. 42</license>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon id="script.speedtestnet"
